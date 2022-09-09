@@ -1,0 +1,186 @@
+
+.header-up-section{
+    grid-template-rows: 1fr;
+}
+main{
+    background-color: var(--main-background);
+}
+.agregar-nuevo{
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px;
+}
+.agregar-title{
+    font-size:2.2rem ;
+    font-weight:bold ;
+    line-height:2.583rem ;
+    margin: 10px 0;
+    color: var(--main-text);
+}
+.product-form{
+    width: 100%;
+    height: auto;
+}
+.imagen,
+.descripcion{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+}
+.agregarImagen{
+    width: 100%;
+    height: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px 0;
+    align-items: center;
+    text-align: center;
+    border: 2px dotted var(--secondary-text);
+    background-color: var(--white);
+    background-image: url('https://cdn1.iconfinder.com/data/icons/interface-travel-and-environment/64/plus-interface-128.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 48px;
+    
+}
+.agregarImagen_droped{
+    background-color: var(--main-blue);
+
+}
+.agregarImagen_over{
+   background-color: var(--secondary-text);
+
+}
+
+#dragText{
+    display: none;
+}
+#agregarImagen{
+    display: none;
+}
+.texto,
+.drop-image{
+    display: none;
+}
+.descripcion input,
+.descripcion select{
+    width: 90%;
+    height: 56px;
+    border-radius: 4px;
+    margin: 4px auto;
+    padding: 5px ;
+    background-color: var(--white);
+    border: none;
+   
+}
+.descripcion textarea{
+    width: 90%;
+    height: 82px;
+    border-radius: 4px;
+    margin: 4px auto;
+    padding: 5px ;
+    background-color: var(--white);
+    border: none;
+    margin-bottom: 10px;
+}
+.agregar{
+    width: 90%;
+    height: 51px;
+    margin: 0 auto;
+}
+.error{
+    font-size: 2rem;
+    margin: 10px 0;
+    padding: 0 40px;
+}
+@media (min-width:768px){
+    .imagen .texto,
+.imagen .drop-image{
+    display: flex;
+}
+.agregar-nuevo .product-form .imagen{
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.agregar-nuevo .agregar-title{
+    margin-top: 30px;
+
+}
+.agregar-nuevo .product-form .imagen .agregarImagen{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 10px;
+}
+.agregar-nuevo .product-form .imagen .agregarImagen{
+    font-size: 18px;
+    background-image: url('../img/cargar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 42px;
+    
+}
+
+.agregar-nuevo .imagen .texto{
+    grid-column: 2/3;
+    grid-row: 1/2;
+   ;
+}
+.agregar-nuevo .imagen .drop-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 306px;
+    height: 95px;
+    padding: 20px 5px;
+    border: 1px solid var(--secondary-text);
+    font-size: 18px;
+
+    
+}
+.agregar-nuevo .imagen .droped-image{
+    border: 2px solid var(--main-blue);
+}
+.agregar-nuevo .imagen .drop-image button{
+    padding: 10px;
+}
+.agregar-nuevo .imagen .drop-image::before{
+    content: "Busque en su dispositivo";
+    margin-bottom: 5px;
+}
+#agregarImagen{
+    display: none;
+}
+#dropImage{
+    display: none;
+}
+.agregarImagen #dragText{
+    display: inline;
+}
+#boton-mobile{
+    display: none;
+}
+}
+@media (min-width:1200px){
+   
+     main .agregar-nuevo{
+         margin-bottom: 20px;
+     }
+     
+}

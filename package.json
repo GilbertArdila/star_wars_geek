@@ -1,0 +1,15 @@
+{
+  "name": "star_wars_geek",
+  "version": "1.0.0",
+  "description": "this is a fake  geek store ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "star_wars",
+    "geek"
+  ],
+  "author": "Gilbert Ardila",
+  "license": "MIT"
+}

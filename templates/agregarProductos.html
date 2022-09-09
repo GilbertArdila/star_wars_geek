@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agregar producto</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+  
+    <link rel="stylesheet" href="../styles/agregarProducto.css">
+</head>
+<body>
+    <header>
+        <header-component></header-component>
+    </header>
+    <main>
+        <section class="agregar-nuevo">
+            <h3 class="agregar-title">Agregar nuevo producto</h3>
+         <form action="#" class="product-form" data-form>
+
+            <div class="imagen">
+                <div class="agregarImagen" id="dropArea">
+                    <h2 id="dragText">Arrastra la imagen acá</h2>
+                   
+                    <input  type="file" data-drop  id="agregarImagen"  accept="image/png, .jpeg, .jpg">
+                   </input>
+                   <button type="button" id="boton-mobile">Seleciona la imagen</button>
+                </div>
+                
+
+                <p class="texto">o</p>
+
+                <div class="drop-image">
+                    <h2 id="dragText">Busqua en tu dispositivo</h2>
+                    <input type="file" id="dropImage" data-selected
+                    accept="image/png, .jpeg, .jpg">
+                    <button type="button" id="drop_button">Seleciona la imagen</button>
+                </div>
+                
+            </div>
+            <p id="error-foto" class="error"></p>
+
+            <div class="descripcion">
+                
+                    <input type="text" class="nombre" data-nombre placeholder="Nombre del producto">
+                    <span id="error-nombre" class="error"></span>
+
+                    <input type="number" class="precio" data-precio placeholder="Precio del producto" step="0.01">
+                    <span id="error-precio" class="error"></span>
+
+                    <select  class="clase" data-clase>
+                        <option value="star_wars">Star Wars</option>
+                        <option value="consoles">Consolas</option>
+                        <option value="others">Diversos</option>
+                    </select>
+                    
+                    <textarea class="descripcion" data-descripcion placeholder="Descripcion del producto"></textarea>
+                    <span id="error-descripcion" class="error"></span>
+                   
+
+                    <button class="form-button agregar" type="submit">Agregar Producto</button> 
+              
+                
+            </div>
+         </form>
+       
+        </section>
+
+        <contacto-component></contacto-component>
+    </main>
+    <footer-component></footer-component>
+        <!-- link a uuid -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="../components/htmlComponents.js" type="text/javascript"></script>
+    <script src="../scripts/createProduct.js" type="module"></script>
+    <script src="../components/contact.js" type="module"></script>
+</body>
+</html>
